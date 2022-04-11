@@ -31,3 +31,15 @@ class PruebaSuma(unittest.TestCase):
 
         # Assert
         self.assertEqual(self.resultadoesperado,self.resultadoActual)
+
+    def test_operacionResta_dosNumerosPositivos_retornaResta(self):
+        # Arrange
+        self.minuendo=50
+        self.sustraendo=30
+        self.resultadoesperado=20
+
+        # Do
+        self.resultadoActual=self.suma.operacionResta(self.minuendo,self.sustraendo)
+
+        # Assert
+        self.assertEqual(self.resultadoesperado,self.resultadoActual)
